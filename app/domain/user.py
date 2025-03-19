@@ -10,6 +10,7 @@ class User(db.Model):
     email: so.Mapped[str] = so.mapped_column(sa.String(120), unique=True, nullable=False)
     password: so.Mapped[str] = so.mapped_column(sa.String(256), nullable=False)
     created_at: so.Mapped[datetime] = so.mapped_column(default=lambda: datetime.now(timezone.utc))
+    username: so.Mapped[str] = so.mapped_column(sa.String(120), unique=True, nullable=False)
 
     def __repr__(self):
         return '<User %r>' % self.email
