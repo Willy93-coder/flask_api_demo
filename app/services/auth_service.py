@@ -1,5 +1,5 @@
 from app.db.database import db
-from app.domain.user import User
+from app.models.user import User
 from werkzeug.security import generate_password_hash, check_password_hash
 
 def register_user(email: str, password: str) -> None | str:
