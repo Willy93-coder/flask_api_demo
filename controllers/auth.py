@@ -1,6 +1,6 @@
 from flask import Request
 from app.models.user import User
-from app.views.auth_view import AuthView
+from app.views.auth import AuthView
 
 class AuthController:
   @staticmethod
