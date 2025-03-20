@@ -1,8 +1,10 @@
 alembic==1.15.1
+bcrypt==4.3.0
 blinker==1.9.0
 click==8.1.8
 colorama==0.4.6
 Flask==3.0.3
+Flask-JWT-Extended==4.7.1
 Flask-Migrate==4.1.0
 Flask-SQLAlchemy==3.1.1
 greenlet==3.1.1
@@ -16,6 +18,7 @@ mysqlx-connector-python==9.2.0
 packaging==24.2
 pluggy==1.5.0
 protobuf==4.25.3
+PyJWT==2.10.1
 pytest==8.3.5
 python-dotenv==1.0.1
 SQLAlchemy==2.0.39
