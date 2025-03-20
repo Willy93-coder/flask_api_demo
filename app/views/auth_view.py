@@ -1,6 +1,6 @@
 from typing import Literal
 from flask import Request, Response, jsonify
-from app.services.auth_services import register_user, login_user
+from app.services.auth_service import register_user, login_user
 
 def login_view(request: Request) -> (tuple[Response, Literal[200]] | tuple[Response, Literal[401]]):
     data = request.get_json()
