@@ -18,8 +18,6 @@ class Config:
   SQLALCHEMY_DATABASE_URI = f'{DB}+{DB_DRIVER}://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}'
   SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-  JWT_SECRET_KEY = os.environ.get('JWT_SECRET')
-
 class DevelopmentConfig(Config):
   """Development configuration"""
   DEBUG = True
